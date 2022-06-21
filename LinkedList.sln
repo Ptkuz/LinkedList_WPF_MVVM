@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32421.90
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinkedList", "LinkedList\LinkedList.csproj", "{B02532FA-013C-42FF-AF77-EC82207657D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B02532FA-013C-42FF-AF77-EC82207657D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B02532FA-013C-42FF-AF77-EC82207657D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B02532FA-013C-42FF-AF77-EC82207657D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B02532FA-013C-42FF-AF77-EC82207657D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0A4E2E7B-B3B2-4962-9B48-3A658BDCB706}
+	EndGlobalSection
+EndGlobal
