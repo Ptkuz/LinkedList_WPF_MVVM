@@ -1,0 +1,5 @@
+C:\Users\ptkuz\source\repos\LinkedList\LinkedListLibrary\obj\Debug\net6.0\LinkedListLibrary.csproj.AssemblyReference.cache
+C:\Users\ptkuz\source\repos\LinkedList\LinkedListLibrary\obj\Debug\net6.0\LinkedListLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ptkuz\source\repos\LinkedList\LinkedListLibrary\obj\Debug\net6.0\LinkedListLibrary.AssemblyInfoInputs.cache
+C:\Users\ptkuz\source\repos\LinkedList\LinkedListLibrary\obj\Debug\net6.0\LinkedListLibrary.AssemblyInfo.cs
+C:\Users\ptkuz\source\repos\LinkedList\LinkedListLibrary\obj\Debug\net6.0\LinkedListLibrary.csproj.CoreCompileInputs.cache
