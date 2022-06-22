@@ -52,3 +52,9 @@ C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Linke
 C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\ref\LinkedList.dll
 C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Views\Windows\MainWindow.g.cs
 C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Views\Windows\MainWindow.baml
+C:\Users\ptkuz\source\repos\LinkedList\LinkedList\bin\Debug\net6.0-windows\LinkedListLibrary.dll
+C:\Users\ptkuz\source\repos\LinkedList\LinkedList\bin\Debug\net6.0-windows\LinkedListLibrary.pdb
+C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Styles\MainWindowStyle.baml
+C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Templates\ModelMainView.baml
+C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Views\Partials\SinglyLinkedView.g.cs
+C:\Users\ptkuz\source\repos\LinkedList\LinkedList\obj\Debug\net6.0-windows\Views\Partials\SinglyLinkedView.baml

@@ -27,6 +27,7 @@ namespace LinkedListLibrary
             count++; // Увеличиваем количество элементов
         }
 
+        // Добавить элемент в начало списка
         public void AppendFirst(T data)
         {
             Node<T> node = new Node<T>(data);
@@ -37,6 +38,7 @@ namespace LinkedListLibrary
             count++;
         }
 
+        // Удалить элемент из списка
         public bool Remove(T data)
         {
             Node<T> current = head;
@@ -66,6 +68,8 @@ namespace LinkedListLibrary
             return false;
         }
 
+
+        // Отчистить список
         public void Clear()
         {
             head = null;
@@ -73,13 +77,18 @@ namespace LinkedListLibrary
             count = 0;
         }
 
+
+        // Содержит ли список заданный элемент
         public bool Contains(T data)
         {
             Node<T>? current = head;
             while (current != null) 
             { 
                 if(current.Data.Equals(data))
+                   return true;
+                current = current.Next;
             }
+            return false;
         }
       
 
@@ -87,11 +96,16 @@ namespace LinkedListLibrary
 
         IEnumerator IEnumerable.GetEnumerator()
         {
-            throw new NotImplementedException();
+            return ((IEnumerable)this).GetEnumerator();
         }
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            Node<T> current = head;
+            while (current != null) 
+            { 
+                yield return current.Data;
+                current = current.Next;
+            }
         }
     }
 }

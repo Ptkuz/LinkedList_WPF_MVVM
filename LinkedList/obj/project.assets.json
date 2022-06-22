@@ -595,6 +595,16 @@
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
         }
+      },
+      "LinkedListLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LinkedListLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LinkedListLibrary.dll": {}
+        }
       }
     }
   },
@@ -1610,10 +1620,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "LinkedListLibrary/1.0.0": {
+      "type": "project",
+      "path": "../LinkedListLibrary/LinkedListLibrary.csproj",
+      "msbuildProject": "../LinkedListLibrary/LinkedListLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
+      "LinkedListLibrary >= 1.0.0",
       "MathCore.WPF >= 0.0.34.3",
       "Microsoft.Extensions.Hosting >= 6.0.1"
     ]
@@ -1649,7 +1665,11 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\ptkuz\\source\\repos\\LinkedList\\LinkedListLibrary\\LinkedListLibrary.csproj": {
+              "projectPath": "C:\\Users\\ptkuz\\source\\repos\\LinkedList\\LinkedListLibrary\\LinkedListLibrary.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
