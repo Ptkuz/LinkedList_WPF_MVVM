@@ -17,9 +17,14 @@
             <i:InvokeCommandAction Command="{Binding Path=LoadListCommand}"/>
         </i:EventTrigger>
     </i:Interaction.Triggers>
-    <Grid>
-        <ListBox ItemsSource="{Binding Path=ListItems}"/>
-
-
-    </Grid>
+    <DockPanel>
+        <UniformGrid DockPanel.Dock="Top" Rows="1" Margin="5">
+            <ListBox ItemsSource="{Binding Path=ListItems}"/>
+        </UniformGrid>
+        <StackPanel Orientation="Vertical" DockPanel.Dock="Bottom">
+            <TextBox Text="{Binding Path=Name}"/>
+            <Button Content="Добавить" Command="{Binding Path=AddElementCommand}"/>
+            <Button Content="Удалить"/>
+        </StackPanel>
+    </DockPanel>
 </UserControl>

@@ -14,6 +14,7 @@ namespace LinkedList.ViewModels.ViewModelsPartials
     {
         private IListCompletion<string> list;
         private CollectionViewSource listViewSource;
+        private LinkedListLibrary.LinkedList<string> linkedList;
 
 
         private ObservableCollection<string>? listItems = new ObservableCollection<string>();
@@ -26,6 +27,14 @@ namespace LinkedList.ViewModels.ViewModelsPartials
 
         public ICollectionView ListView { get { return listViewSource.View; } }
 
+
+        private string name;
+        public string Name 
+        {
+            get => name;
+            set => Set(ref name, value);
+        }
+
         public SinglyLinkedViewModel()
         {
 
@@ -34,6 +43,8 @@ namespace LinkedList.ViewModels.ViewModelsPartials
         public SinglyLinkedViewModel(IListCompletion<string> list)
         {
             this.list = list;
+            linkedList = list.Completion();
+
         }
 
         private ICommand loadListCommand;
@@ -46,11 +57,27 @@ namespace LinkedList.ViewModels.ViewModelsPartials
 
         private void OnLoadListCommandExecuted(object? obj)
         {
-            var result = list.Completion();
-            foreach (var item in result)
+           
+            foreach (var item in linkedList)
             {
                 ListItems.Add(item);
             }
+        }
+
+
+        private ICommand addElementCommand;
+        public ICommand AddElementCommand => addElementCommand
+            ??= new LambdaCommand(OnAddElementCommandExecuted, CanAddElementCommandExecute);
+
+        private bool CanAddElementCommandExecute(object? arg)
+            => true;
+
+
+        private void OnAddElementCommandExecuted(object? obj)
+        {
+
+            linkedList.Add(Name);
+            ListItems.Add(Name);
         }
 
         //public string Name { get => name; set => Set(ref name, value); }
